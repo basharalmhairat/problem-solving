@@ -1,4 +1,4 @@
-
+'use strict';
 
 // 1) ---------------------
 // 
@@ -34,10 +34,9 @@ const sumNums = (arr)=>{
     
     let  a = arr.length;
    for (let x= 0 ; x <= a ; x++) {
-       do {sum=sum+arr[x]}
-
-        while (arr[a] !== Number);
-}
+      if (typeof arr[x] == 'String' ){
+          continue;
+      }
 return sum;
 }     
 
