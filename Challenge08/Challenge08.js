@@ -100,7 +100,9 @@ const courses = [
 const getInfo = (arr) => {
   let coursesName = [];
   let studentsName = [];
-  // write your code here
+  arr.forEach(element => {
+    
+  });
 
   return { coursesName, studentsName };
 };
